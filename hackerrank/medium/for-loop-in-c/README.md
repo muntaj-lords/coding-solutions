@@ -52,7 +52,7 @@ Print the appropriate English representation,`even`, or `odd`, based on the cond
 **Language:** C  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-02T15:32:15.086Z  
+**Submitted:** 2026-10-02T15:40:46.046Z  
 
 ```c
 #include <stdio.h>
@@ -70,7 +70,7 @@ int main()
 
 for(int n=a;n<=b;n++)
 {
-   if(n<=9)
+   if(n>=1 && n<=9)
     switch(n)
     {
         case 1:
@@ -103,10 +103,10 @@ for(int n=a;n<=b;n++)
         
     }
     
-   else if(n>9 && n%2==0)
+   else if((n>9) && (n%2==0))
     printf("even\n");
-    else if(n>9 && n%2!=0)
-      printf("odd");
+   else 
+      printf("odd\n");
     
     
 }
